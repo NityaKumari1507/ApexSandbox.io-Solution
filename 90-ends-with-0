@@ -1,5 +1,5 @@
 public Boolean isEndWithZero(Integer num){
      //code here
-     integer size=num.length();
+     integer size=(String.valueOf(num)).length();
      return (num[size-1]==0?true:false);
 }
