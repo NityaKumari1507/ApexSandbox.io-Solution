@@ -12,7 +12,8 @@ public String changeTimeFormat(String strTime) {
         result=strTime +' PM';
     }
     else{
-        result=String.valueOf(integer.valueOf(s[0])-12)+':'+s[1]+' PM';
+        string str=(integer.valueOf(s[0])-12)<10?'0'+String.valueOf(integer.valueOf(s[0])-12):String.valueOf(integer.valueOf(s[0])-12);
+        result=str+':'+s[1]+' PM';
     }
     return result;
 }
