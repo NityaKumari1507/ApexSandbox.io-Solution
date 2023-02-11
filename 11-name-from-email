@@ -1,0 +1,6 @@
+public String nameFromEmail(String email) {
+    //code here
+    set<string> split=email.split('.');
+    string result=split[0]+' ';
+    result+=split[1].substringBetween('.','@');
+}
