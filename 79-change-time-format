@@ -1,0 +1,9 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    list<string> s=strTime.split(':');
+    string result='';
+    if(integer.valueOf(s[0])>0 && integer.valueOf(s[0])<12){
+        result=s[0]+':'+s[1]+' AM';
+    }
+    return result;
+}
