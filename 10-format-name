@@ -1,7 +1,7 @@
 public String formatName(String firstName, String lastName) {
     //code here
     String result='';
-    if(lastName!=null && String.isNotBlank(firstName) && firstName!=null && String.isNotBlank(lastName)
+    if(lastName!=null && String.isNotBlank(firstName) && firstName!=null && String.isNotBlank(lastName)){
         result=lastName+','+firstName;
     }
     else if(firstname!=null && String.isNotBlank(firstName)){
