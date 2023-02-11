@@ -1,6 +1,6 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code 
-    if(sentence==null)
+   /* if(sentence==null)
     return null;
     list<string> s=sentence.split(' ');
     String result='';
@@ -10,5 +10,14 @@ public String reverseWordsInASentence(String sentence){
        result+=' ';
 
    }
-    return result;
+    return result;*/
+    //your flawless code here
+    if(sentence==null) return null;
+    string output='';
+    for(integer i=sentence.split(' ').size()-1;i>=0;i--){
+        output+=sentence.split(' ').get(i);
+        if(i!=0 || i!=sentence.split(' ').size()-1) output+=' ';
+    }
+    return output.trim();
+
 }
