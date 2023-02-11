@@ -1,9 +1,7 @@
 public String nameFromEmail(String email) {
     //code here
-    list<string> str=email.split('@');
+    list<string> str=email.split('\\.');
     string result='';
-    string str1=str[0].replace('.',' ');
-    list<string> str2=str1.split(' ');
-    result=(str2[0].toLowerCase()).capitalize()+' '+(str2[1].toLowerCase()).capitalize();
+    result=(str[0].toLowerCase()).capitalize()+' '+(str[1].toLowerCase()).capitalize();
 return result;
 }
