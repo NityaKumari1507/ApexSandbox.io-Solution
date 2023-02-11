@@ -1,13 +1,13 @@
 public String formatName(String firstName, String lastName) {
     //code here
     String result='';
-    if(lastName!=null && firstName!=null){
+    if(lastName!=null && !lastName.isEmpty() && firstName!=null && !firstName.isEmpty()){
         result=lastName+','+firstName;
     }
-    else if(firstname!=null){
+    else if(firstname!=null && !firstName.isEmpty()){
         result=firstName;
     }
-    else if(lastName!=null){
+    else if(lastName!=null && !lastName.isEmpty()){
     result=lastName;
     }
     return result;
