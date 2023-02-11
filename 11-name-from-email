@@ -3,8 +3,7 @@ public String nameFromEmail(String email) {
     list<string> str=email.split('@');
     string result='';
     string str1=str[0].replace('.',' ');
-    for(string s:str1.split(' ')){
-        result+=s.capitalize();
-    }
+    list<string> str2=(str1.split(' ')).ToLowerCase();
+    result=str2[0].capitalize()+' '+str2[1].capitalize();
 return result;
 }
