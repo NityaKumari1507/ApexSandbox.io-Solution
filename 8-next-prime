@@ -1,7 +1,7 @@
 public Integer nextPrime(Integer num) {
     //code here
     if(num<=0){
-        retun 2;
+        return 2;
     }
     for(integer i=num+1;;i++){
          integer flag=0;
