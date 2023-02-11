@@ -1,7 +1,8 @@
 public String nameFromEmail(String email) {
     //code here
-    List<string> split=email.split('.');
-    string result=split[0]+' ';
-    result+=split[1].substringBetween('.','@');
+    List<string> str=email.split('.');
+    system.debug(str);
+    string result=str[0]+' ';
+    result+=str[1].substringBetween('.','@');
     return result;
 }
