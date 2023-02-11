@@ -5,5 +5,8 @@ public String changeTimeFormat(String strTime) {
     if(integer.valueOf(s[0])>0 && integer.valueOf(s[0])<12){
         result=s[0]+':'+s[1]+' AM';
     }
+    else if(integer.valueOf(s[0])==0){
+         result='12'+':'+s[1]+' AM';
+    }
     return result;
 }
