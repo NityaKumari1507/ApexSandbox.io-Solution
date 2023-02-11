@@ -1,5 +1,8 @@
 public Integer nextPrime(Integer num) {
     //code here
+    if(num<=0){
+        retun 2;
+    }
     for(integer i=num+1;;i++){
          integer flag=0;
         for(integer j=2;j<=math.sqrt(i);j++){
