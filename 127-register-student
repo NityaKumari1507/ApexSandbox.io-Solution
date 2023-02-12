@@ -5,5 +5,8 @@ public String registerStudent(String name, String phone, String email) {
     a.apxio__Phone__c=phone;
     a.apxio__Email__c=email;
     insert a;
-    return a.apxio__Registration_Number__c;
+    list<apxio_student__c> alist=[select id, apxio__Registration_Number__c from apxio__Student__c];
+    if(alist!=null)
+    return alist[0].apxio__Registration_Number__c;
+    else return null;
 }
