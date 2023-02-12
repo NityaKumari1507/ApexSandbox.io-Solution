@@ -1,5 +1,5 @@
 public List<apxio__Student__c> selectUnreachableStudents() {
     // code here
-    List<apxio__Student__c> a=[select id, name,apxio__email__c,apxio__phone__c, apxio__Active__c from apxio__student__c where apxio__Active__c=true && apxio__phone__c=null && apxio_email__c=null order by Name asc];
+    List<apxio__Student__c> a=[select id, name,apxio__email__c,apxio__phone__c, apxio__Active__c from apxio__student__c where apxio__Active__c=true && apxio__phone__c=null && apxio__email__c=null order by Name asc];
     return a;
 }
