@@ -1,15 +1,15 @@
 public Id classFromCourse(String courseName) {
     // code here
     Map<string,apxio__Course__c> courseMap=new Map<string,apxio__course__c>();
-    for(apxio__course__c a: ([select id,name from apxio__Course__c where name=:courseName])){
+    for(apxio__course__c a: [select id,name from apxio__Course__c where name=:courseName]){
         courseMap.put(a.name,a);
     }
     if(courseMap.isEmpty())
     return null;
     else{
-    apxio__Class__c class=new apxio__Class__c();
-    class.apxio__course__c=courseMap.get(courseName).id;
-    insert class;
-    return class.id;
+    apxio__Class__c class1 =new apxio__Class__c();
+    class1.apxio__course__c=courseMap.get(courseName).id;
+    insert class1;
+    return class1.id;
     }
 }
