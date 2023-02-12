@@ -9,6 +9,7 @@ public Id classFromCourse(String courseName) {
     else{
     apxio__Class__c class1 =new apxio__Class__c();
     class1.apxio__course__c=courseMap.get(courseName).id;
+    class1.name=courseMap.get(courseName).name;
     insert class1;
     return class1.id;
     }
