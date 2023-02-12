@@ -6,9 +6,10 @@ public Id classFromCourse(String courseName) {
     }
     if(courseMap.isEmpty())
     return null;
+    else{
     apxio__Class__c class=new apxio__Class__c();
     class.apxio__course__c=courseMap.get(courseName).id;
     insert class;
     return class.id;
-
+    }
 }
